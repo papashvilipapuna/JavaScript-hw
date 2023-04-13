@@ -17,9 +17,9 @@ let capsuleCount = 5;
 let capsulePrice = 2;
 
 let userBalance = 50;
-let creditCardStatus = capsuleCount * capsulePrice <= userBalance;
+let creditCardStatus = userBalance >= capsulePrice;
 
-paymentComplete = creditCardStatus;
+paymentComplete = capsuleCount >= 1 && creditCardStatus;
 console.log(paymentComplete)
 
 // 9

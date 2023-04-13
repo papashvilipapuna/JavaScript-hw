@@ -66,7 +66,3 @@ if (igoetamdeFuel <= fuel) {
 } if (fuel >= batumamdeFuel) {
     console.log("ბათუმამდეც გეყოფა");
 }
-
-// 6
-let batumidanBackFuel = fuel - batumamdeFuel;
-if (batumamdeBackFuel >= )
