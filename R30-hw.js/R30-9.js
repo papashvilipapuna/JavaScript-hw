@@ -1,23 +1,14 @@
 // 9
-let number = 17;
+let x = -5;
+let isPrime = x === 2 ? true : false;
 
-if (number > 2) {
-  for (let i = 2; i < number; i++) {
-    if (number % i === 0) {
-      console.log(`არ არის მარტივი`);
-    } else {
-      console.log(`მარტივია`);
-    }
-    continue;
+for (let i = 2; i < ((x < 0) ? (x * -1) : x); i++) {
+  if (x % i === 0) {
+    isPrime = false;
+    break;
+  } else {
+    isPrime = true;
   }
-} else if (number == 2) {
-  console.log(`მარტივი რიცხვია`);
-} else if (number == 1) {
-  console.log(`არ არის მარტივი`);
-} else {
-  console.log(`უარყოფითს ნუ წერ`);
 }
 
-// იმ ვარიანტზეც გავწერე ვინმე 2ზე დაბალ რიცხვს თუ გამოიყენებს.
-// პრაქტიკული არ არის რადგან ყველა i-ს მნიშვნელობაზე ყოფს და თვითოეულ განაყოფზე ცალცალკე წერს პასუხს.
-// თუ ერთ განაყოფზე მაინც დაწერა „არ არის მარტივი„ ანუ number არ არის მარტივი.
+console.log("isPrime", isPrime);
